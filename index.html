@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Form Generation</title>
+        <style>
+            .hidden {
+                display: none;
+            }
+
+            .mr4 {
+                margin-right: 4px;
+            }
+
+            .ml4 {
+                margin-left: 4px;
+            }
+
+            .mb16 {
+                margin-bottom: 16px;
+            }
+        </style>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <form id="generateForm">
+            <div class="mb16">
+                <input type="text" id="formName" placeholder="Form name"/>
+            </div>
+            <div class="mb16">
+                <input type="number" id="numberQuestion" 
+                       onchange="onChangeNumberQuestion(this.value)" placeholder="Questions number"/>
+            </div>
+        </form>
+        <button onclick="generateNewForm()">Generate Form !</button>
+    </body>
+</html>
